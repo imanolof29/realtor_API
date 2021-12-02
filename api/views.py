@@ -17,7 +17,7 @@ class RealtorDetailsView(generics.ListAPIView):
     permission_classes = [permissions.IsAuthenticated]
 
     #get queryset from url
-    """def get_queryset(self):
+    def get_queryset(self):
         zipcode = self.request.query_params.get('zipcode') # format: zipcodes coma separated: http://127.0.0.1:8000/api/realtor_2/?zipcode=28011,28240
         date_insert_from = self.request.query_params.get('date_insert_from')
         date_insert_to = self.request.query_params.get('date_insert_to')
@@ -31,7 +31,7 @@ class RealtorDetailsView(generics.ListAPIView):
                 return self.queryset.filter(date_insert__gte=date_insert_from)
             elif date_insert_from is None and date_insert_to is not None:
                 return self.queryset.filter(date_insert__lte=date_insert_from)
-        return self.queryset"""
+        return self.queryset
         
         
 
