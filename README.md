@@ -22,4 +22,4 @@ Acceder al panel de administrador de Django e iniciar sesion
 |:-:|:-:|:-:|
 | 1  | /admin/  | Rutas del panel de administrados  |
 | 2  | /auth/users  | Crear y listar usuarios (solo visible para el superusuario) |
-| 3  | /realtor_seag  | Listado de realtors. Permite filtrar por zipcode y fechas de insercion  |
+| 3  | /api/realtor_seag  | Listado de realtors. Permite filtrar por zipcode y fechas de insercion  |
