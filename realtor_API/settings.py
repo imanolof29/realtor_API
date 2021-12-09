@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'corsheaders',
     #custom apps
     'api',
-    'users'
+    'users',
     
 ]
 
@@ -58,6 +58,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
+    #request log custom middleware
+    #'users.middleware.SaveRequest'
 ]
 
 ROOT_URLCONF = 'realtor_API.urls'
